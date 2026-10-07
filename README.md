@@ -1,6 +1,6 @@
 # Made Genetics explorer
 
-A working, browser-only prototype for exploring genetic testing and possible funding routes. The general entry journey accepts different interests and uncertainty. Only the hereditary breast cancer pathway is implemented.
+A working, browser-only prototype for exploring genetic testing and possible funding routes. The general entry journey accepts different interests and uncertainty. Hereditary breast cancer and reproductive pathways are implemented, including carrier screening, NIPT and karyotyping.
 
 ## Run and deploy
 
@@ -18,6 +18,8 @@ Create a new GitHub repository and push this project. Import it as a new Vercel 
 
 - Purpose and test-interest questions, including “not sure”.
 - Adult/self/Australia scope handling, with consultation routing for other cases.
+- Reproductive test selection (one area, all three or unsure), pregnancy stage and timing, carrier/partner results, family history, ancestry, existing pregnancy findings and karyotype context.
+- Test-specific results, separate public-service guidance and a reproductive consultation download.
 - Personal breast cancer history, repeatable family-history records on either side, confirmed family variants and previous testing.
 - Review/edit answers; conservative Medicare, public-service and private-testing summaries.
 - Downloadable text summary; reset and privacy explanation.
@@ -35,4 +37,4 @@ Booking currently opens an explicitly labelled preview; no appointment or referr
 
 ## Validation
 
-Six automated pathway tests cover unknown vs confirmed family variants, affected-person routing, scope boundaries, missing family history and unsupported interests. Desktop and mobile browser walkthroughs cover the family-history journey, unknown-interest routing, review, results and consultation preview. The text-summary download was verified on disk. Security headers were applied during the final browser checks. Deployment and account connection must be verified separately; a successful local run is not evidence of a live deployment.
+Seventeen automated pathway tests include reproductive timing boundaries, CF/SMA versus fragile X partner funding, repeat testing, unknown facts, scope limits and hidden-answer isolation. Breast-pathway tests cover unknown vs confirmed family variants, affected-person routing, scope boundaries, missing family history and unsupported interests. Desktop and mobile browser walkthroughs cover the family-history journey, unknown-interest routing, review, results and consultation preview. The text-summary download was verified on disk. Security headers were applied during the final browser checks. Deployment and account connection must be verified separately; a successful local run is not evidence of a live deployment.

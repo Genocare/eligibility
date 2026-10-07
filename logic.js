@@ -19,4 +19,4 @@ export function assess(a) {
  private:'The supplied catalogue describes self-funded clinical genetic testing, subject to laboratory and request requirements. The appropriate test and current price need confirmation.',
  refs:known?['MBS-HC-02','PUB-02','SP-01']:personal?['MBS-HC-01','PUB-02','SP-01']:['MBS-HC-02','PUB-02','SP-01']};
 }
-export function nextRoute(a){return a.interest==='breast'?'breast':a.interest==='unsure'?'clarify':'unavailable'}
+export function nextRoute(a){return a.interest==='breast'?'breast':['carrier','nipt','karyotype','reproductive'].includes(a.interest)?'reproductive':a.interest==='unsure'?'clarify':'unavailable'}

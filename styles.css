@@ -3,3 +3,4 @@
 .progress .progress-1{width:33.33%}.progress .progress-2{width:66.66%}.progress .progress-3{width:100%}.intro-note{font-size:12px;margin-top:18px}
 
 h1:focus{outline:none}
+.repro-results{display:grid;gap:20px}.repro-results .card{padding:30px}.repro-results h2{font-size:32px;letter-spacing:-1px}.test-detail{display:grid;grid-template-columns:1fr 1fr;gap:30px;border-top:1px solid var(--line);padding-top:22px}.test-detail h3{font-size:17px}.form-area>h3{margin-top:34px}.repro-results .card>p:last-child{margin-bottom:0}@media(max-width:800px){.test-detail{grid-template-columns:1fr;gap:10px}.repro-results .card{padding:22px}}
