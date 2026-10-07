@@ -38,3 +38,9 @@ Clinical review is required before production use. The source repository remains
 
 ## Sample booking update
 Genetic Navigator (20 minutes with a GC) and GC Consultation (45 minutes) now link to separate service views on booking.html. Visitors can preview an appointment or waiting-room entry. No real availability, queue, appointment, payment or referral is created. No contact or health data is collected or transferred. Fees are explicitly unconfirmed. Service links open in a new tab to preserve explorer answers.
+
+
+## Active source revision 2.1 — 7 October 2026
+The current source is the supplied plain-language v2 catalogue, normalised as v2.1. All 84 rules and 165 Medicare entries remain in the repository. Four general Medicare requester fields were corrected to defer to item-specific requirements. legacy_technical_fields were restored from the true original upload. Raw originals and raw v2 uploads are preserved; v0.1 repository snapshots are in versions/v0.1. Historical review flags are audit context, not the current response source.
+
+Default retrieval uses current records and excludes somatic entries; mixed groups are represented by their individual in-scope items. There are 63 excluded somatic entries. Website medicare-data.js contains only 73296, 73297, 73451, 73452, 73289, 73287 and 73293. Full plain-language criteria, requesters, limits, exceptions and clinician notes are available beside the concise funding summaries and in downloads. No old pseudocode is executed. No clinical validation of all items is claimed. Prices were not updated.
