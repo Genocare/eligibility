@@ -1,0 +1,8 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {fundingFor,fundingText} from './funding.js';
+test('each supported test shows four distinct funding channels and matching export',()=>{for(const id of ['breast','carrier','nipt','karyotype']){const f=fundingFor(id);assert.deepEqual(f.map(x=>x.channel),['Medicare','Private health insurance','Public services','Private testing']);for(const x of f){assert.ok(fundingText(id).includes(x.summary));assert.ok(fundingText(id).includes(x.status));}assert.match(f[2].summary,/Waiting lists can be long/);assert.equal(f[3].action,'navigator');}});
+test('carrier screen and partner follow-up retain distinct lifetime limits',()=>{const s=fundingText('carrier');assert.match(s,/73451 is limited to one test per lifetime/);assert.match(s,/73452 is limited to one test per condition per lifetime/);assert.match(s,/does not cover FMR1 partner/);});
+test('unknown karyotype price never substitutes Medicare schedule fees',()=>{const f=fundingFor('karyotype');assert.match(f[3].summary,/Quote required/);assert.doesNotMatch(f[3].summary,/358|394|\$/);});
+test('family history alone does not establish Medicare entitlement',()=>{assert.match(fundingFor('breast',{})[0].summary,/does not by itself establish/);assert.match(fundingText('breast'),/greater than 10% chance of a harmful inherited variant/);});
+test('out of scope results do not claim assessed funding',()=>{const f=fundingFor('breast',{},false);assert.ok(f.slice(0,3).every(x=>x.status==='Not assessed'));});

@@ -27,7 +27,7 @@ Create a new GitHub repository and push this project. Import it as a new Vercel 
 
 ## Source boundaries and clinical status
 
-This is a consultation-routing prototype, not a validated eligibility engine or medical diagnosis tool. Its evidence is limited to the supplied eligibility catalogue dated 7 October 2026, particularly MBS-HC-01, MBS-HC-02, PUB-02 and SP-01. See CLINICAL-NOTES.md for how rules are used. It does not use live MBS data or calculate variant probability. Family history is not automatically treated as Medicare eligibility. Testing for a confirmed family variant stays conditional on report review and other requirements. Unknown facts remain unknown. Current pricing, clinic catchments and definitive eligibility are not available.
+This is a consultation-routing prototype, not a validated eligibility engine or medical diagnosis tool. Its evidence combines the supplied eligibility catalogue dated 7 October 2026 with official MBS descriptors checked for this funding update. See CLINICAL-NOTES.md for how rules are used. It does not use live MBS data or calculate variant probability. Family history is not automatically treated as Medicare eligibility. Testing for a confirmed family variant stays conditional on report review and other requirements. Unknown facts remain unknown. Current pricing, clinic catchments and definitive eligibility are not available.
 
 Somatic cancer testing is not included. The workflow explores genetic risk, not mammography or breast symptom assessment. Clinical review of questions and wording remains required before patient-facing production use.
 
@@ -37,4 +37,7 @@ Booking currently opens an explicitly labelled preview; no appointment or referr
 
 ## Validation
 
-Seventeen automated pathway tests include reproductive timing boundaries, CF/SMA versus fragile X partner funding, repeat testing, unknown facts, scope limits and hidden-answer isolation. Breast-pathway tests cover unknown vs confirmed family variants, affected-person routing, scope boundaries, missing family history and unsupported interests. Desktop and mobile browser walkthroughs cover the family-history journey, unknown-interest routing, review, results and consultation preview. The text-summary download was verified on disk. Security headers were applied during the final browser checks. Deployment and account connection must be verified separately; a successful local run is not evidence of a live deployment.
+Twenty-two automated pathway and funding tests include reproductive timing boundaries, CF/SMA versus fragile X partner funding, repeat testing, unknown facts, scope limits and hidden-answer isolation. Breast-pathway tests cover unknown vs confirmed family variants, affected-person routing, scope boundaries, missing family history and unsupported interests. Desktop and mobile browser walkthroughs cover the family-history journey, unknown-interest routing, review, results and consultation preview. The text-summary download was verified on disk. Security headers were applied during the final browser checks. Deployment and account connection must be verified separately; a successful local run is not evidence of a live deployment.
+
+
+Funding v0.3: four channels per test, official MBS links and lay criteria, dated indicative private fees, public waitlist guidance and separate navigator preview. See CLINICAL-NOTES.md for source limits.

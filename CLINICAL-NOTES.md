@@ -26,3 +26,11 @@ NIPT: label it prenatal screening, not diagnosis. The source describes approxima
 Karyotyping: no miscarriage-count or infertility eligibility thresholds are invented. Parental blood, fetal testing and pregnancy-loss tissue investigations remain distinct. Source cytogenetic rules are incomplete; microarray criteria are not transferred to karyotyping. Public funding stays discretionary.
 
 Unknown or hidden answers cannot generate positive eligibility. When a user changes focus, answers from unrelated sections do not enter the results or download. The application remains memory-only and booking remains an explicit preview.
+
+
+## Funding update — 7 October 2026
+The four funding panels and downloadable summaries now use funding.js. Official MBS descriptors supplement (and where inconsistent supersede) the supplied catalogue: 73296/73297, 73451/73452, 73289/73287/73293. Links are displayed beside the criteria. Carrier 73451 is one test per lifetime; 73452 is one per condition per lifetime. No numerical miscarriage threshold is inferred from chromosome descriptors. Private health wording is specifically for standard outpatient cover, with an admitted-hospital exception subject to policy. Public services may be free following acceptance; waiting lists can be long and need local confirmation.
+
+Prices remain supplied-research estimates: hereditary panels A$400–800, NIPT A$400–800; carrier examples A$385 and A$595 per person from January 2024. They are not verified current quotes or universal price bounds. No supported karyotyping range exists; quote required. Medicare schedule fees are not used as private prices. Navigator and GC buttons remain labelled booking previews.
+
+Clinical review is required before production use. The source repository remains unchanged; this supplemental verification applies to prototype funding panels.

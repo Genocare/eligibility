@@ -4,3 +4,5 @@
 
 h1:focus{outline:none}
 .repro-results{display:grid;gap:20px}.repro-results .card{padding:30px}.repro-results h2{font-size:32px;letter-spacing:-1px}.test-detail{display:grid;grid-template-columns:1fr 1fr;gap:30px;border-top:1px solid var(--line);padding-top:22px}.test-detail h3{font-size:17px}.form-area>h3{margin-top:34px}.repro-results .card>p:last-child{margin-bottom:0}@media(max-width:800px){.test-detail{grid-template-columns:1fr;gap:10px}.repro-results .card{padding:22px}}
+
+.funding-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:28px 0}.funding-card{background:#faf8f3;border:1px solid #ddbee9;border-radius:20px;padding:24px;min-width:0}.funding-card h3{margin-top:0}.funding-status{display:block;color:#410d3c;font-size:.95rem}.funding-card li{margin-bottom:12px;line-height:1.6}.funding-card ul{padding-left:20px}.funding-card .secondary{margin-top:20px;white-space:normal}.source-link{display:inline-block;color:#4b0d68;margin:4px 10px 4px 0;font-size:.85rem}.repro-results>.card{padding:28px}@media(max-width:760px){.funding-grid{grid-template-columns:1fr}.funding-card{padding:20px}.repro-results>.card{padding:18px}}
