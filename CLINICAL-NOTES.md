@@ -34,3 +34,7 @@ The four funding panels and downloadable summaries now use funding.js. Official 
 Prices remain supplied-research estimates: hereditary panels A$400–800, NIPT A$400–800; carrier examples A$385 and A$595 per person from January 2024. They are not verified current quotes or universal price bounds. No supported karyotyping range exists; quote required. Medicare schedule fees are not used as private prices. Navigator and GC buttons remain labelled booking previews.
 
 Clinical review is required before production use. The source repository remains unchanged; this supplemental verification applies to prototype funding panels.
+
+
+## Sample booking update
+Genetic Navigator (20 minutes with a GC) and GC Consultation (45 minutes) now link to separate service views on booking.html. Visitors can preview an appointment or waiting-room entry. No real availability, queue, appointment, payment or referral is created. No contact or health data is collected or transferred. Fees are explicitly unconfirmed. Service links open in a new tab to preserve explorer answers.

@@ -41,3 +41,7 @@ Twenty-two automated pathway and funding tests include reproductive timing bound
 
 
 Funding v0.3: four channels per test, official MBS links and lay criteria, dated indicative private fees, public waitlist guidance and separate navigator preview. See CLINICAL-NOTES.md for source limits.
+
+
+## Sample booking update
+Genetic Navigator (20 minutes with a GC) and GC Consultation (45 minutes) now link to separate service views on booking.html. Visitors can preview an appointment or waiting-room entry. No real availability, queue, appointment, payment or referral is created. No contact or health data is collected or transferred. Fees are explicitly unconfirmed. Service links open in a new tab to preserve explorer answers.
