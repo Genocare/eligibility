@@ -1,0 +1,13 @@
+{
+  "name": "made-genetics-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test *.test.js",
+    "build": "node build.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
